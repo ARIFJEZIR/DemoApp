@@ -17,7 +17,7 @@ let STORYBOARDMAIN = UIStoryboard(name: "Main", bundle: nil)
 
 
 struct BaseAPI {
-    static let URL = "http://192.168.168.65:3000/api"
+    static let URL = ""
 }
 
 struct LoginAPI {
