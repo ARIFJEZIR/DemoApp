@@ -17,9 +17,23 @@ class HomePageVC: UIViewController {
         getHomePageData()
     }
     @IBAction func clickLogOut(_ sender: Any) {
-        USERDEFAULTS.clearLoginDetails()
-        APPDELEGATE.MainVC()
-    }
+       // USERDEFAULTS.clearLoginDetails()
+            let dialogMessage = UIAlertController(title: "Logout", message: "Are you sure you want to logout?", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+                  APPDELEGATE.updateLoginVC()
+                let domain = Bundle.main.bundleIdentifier!
+                USERDEFAULTS.removePersistentDomain(forName: domain)
+                USERDEFAULTS.synchronize()
+                
+            })
+            let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+                print("Cancel button tapped")
+            }
+            
+            dialogMessage.addAction(ok)
+            dialogMessage.addAction(cancel)
+            self.present(dialogMessage, animated: true, completion: nil)
+        }
     
     func getHomePageData(){
          let header = ["x-auth-token":USERDEFAULTS.getAuthToken()]

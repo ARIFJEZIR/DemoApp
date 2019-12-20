@@ -49,8 +49,9 @@ class LoginPageVC: UIViewController {
         }
     }
     
-    @IBAction func goBack(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+    @IBAction func goSignUp(_ sender: Any) {
+        let signUpVC = STORYBOARDMAIN.instantiateViewController(withIdentifier: "SignUpVC") as!  SignUpVC
+        self.present(signUpVC, animated: true,completion: nil)
     }
     
     func checkValidate() -> Bool {

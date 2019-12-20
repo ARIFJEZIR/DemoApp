@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		271346D023A4F6CD00696806 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271346CF23A4F6CD00696806 /* HomePageVC.swift */; };
-		271346D323A4F97D00696806 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271346D223A4F97D00696806 /* APIManager.swift */; };
 		271346D723A505DF00696806 /* NsUserDefaults+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271346D623A505DF00696806 /* NsUserDefaults+Helper.swift */; };
 		2750C48523A3E6FA007D6631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750C48423A3E6FA007D6631 /* AppDelegate.swift */; };
 		2750C48C23A3E6FC007D6631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2750C48B23A3E6FC007D6631 /* Assets.xcassets */; };
@@ -16,17 +15,32 @@
 		2750C4AE23A3EC15007D6631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2750C4AD23A3EC15007D6631 /* Main.storyboard */; };
 		2750C4B023A3ECAD007D6631 /* LoginPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750C4AF23A3ECAD007D6631 /* LoginPageVC.swift */; };
 		2750C4B223A3ECC8007D6631 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750C4B123A3ECC8007D6631 /* SignUpVC.swift */; };
-		2750C4B423A3ECDA007D6631 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750C4B323A3ECDA007D6631 /* MainPageVC.swift */; };
-		2750C4B823A3EF99007D6631 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750C4B723A3EF99007D6631 /* AppConstant.swift */; };
 		275E042F23A919B2005FCB7B /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275E042E23A919B2005FCB7B /* LoginVM.swift */; };
 		275E043223A91D19005FCB7B /* SignUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275E043123A91D19005FCB7B /* SignUP.swift */; };
 		275E043423A91D53005FCB7B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275E043323A91D53005FCB7B /* Home.swift */; };
+		2773321523ACEC37000ADDB1 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773303023ACEC36000ADDB1 /* AppConstants.swift */; };
+		2773321623ACEC37000ADDB1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773303223ACEC36000ADDB1 /* UIColorExtension.swift */; };
+		2773321723ACEC37000ADDB1 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773303323ACEC36000ADDB1 /* UITextViewExtension.swift */; };
+		2773321823ACEC37000ADDB1 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773303423ACEC36000ADDB1 /* ViewControllerExtension.swift */; };
+		2773321923ACEC37000ADDB1 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773303523ACEC36000ADDB1 /* NSObjectExtension.swift */; };
+		2773321B23ACEC37000ADDB1 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773303723ACEC36000ADDB1 /* UITextFieldExtension.swift */; };
+		2773321C23ACEC37000ADDB1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773303823ACEC36000ADDB1 /* UIViewExtension.swift */; };
+		2773321D23ACEC37000ADDB1 /* MIMeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773303923ACEC36000ADDB1 /* MIMeType.swift */; };
+		2773321E23ACEC37000ADDB1 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773303A23ACEC36000ADDB1 /* UIDeviceExtension.swift */; };
+		2773321F23ACEC37000ADDB1 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773303B23ACEC36000ADDB1 /* ShadowView.swift */; };
+		2773322023ACEC37000ADDB1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773303C23ACEC36000ADDB1 /* StringExtension.swift */; };
+		2773322123ACEC37000ADDB1 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773303D23ACEC36000ADDB1 /* UIImageExtension.swift */; };
+		2773322323ACEC37000ADDB1 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773304123ACEC36000ADDB1 /* APIManager.swift */; };
+		2773327023ACEC37000ADDB1 /* Cabin-Medium-TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 277331FF23ACEC37000ADDB1 /* Cabin-Medium-TTF.ttf */; };
+		2773327123ACEC37000ADDB1 /* WorkSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2773320023ACEC37000ADDB1 /* WorkSans-Regular.otf */; };
+		2773327223ACEC37000ADDB1 /* Cabin-Bold-TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2773320123ACEC37000ADDB1 /* Cabin-Bold-TTF.ttf */; };
+		2773327323ACEC37000ADDB1 /* Cabin-SemiBold-TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2773320223ACEC37000ADDB1 /* Cabin-SemiBold-TTF.ttf */; };
+		2773327423ACEC37000ADDB1 /* Cabin-Regular-TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2773320323ACEC37000ADDB1 /* Cabin-Regular-TTF.ttf */; };
 		6DE2E17783A2C6036D3F7799 /* Pods_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC2E4842B6FC1B2EC520271 /* Pods_DemoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		271346CF23A4F6CD00696806 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
-		271346D223A4F97D00696806 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		271346D623A505DF00696806 /* NsUserDefaults+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NsUserDefaults+Helper.swift"; sourceTree = "<group>"; };
 		2750C48123A3E6FA007D6631 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2750C48423A3E6FA007D6631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,11 +50,27 @@
 		2750C4AD23A3EC15007D6631 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2750C4AF23A3ECAD007D6631 /* LoginPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageVC.swift; sourceTree = "<group>"; };
 		2750C4B123A3ECC8007D6631 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		2750C4B323A3ECDA007D6631 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
-		2750C4B723A3EF99007D6631 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		275E042E23A919B2005FCB7B /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		275E043123A91D19005FCB7B /* SignUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUP.swift; sourceTree = "<group>"; };
 		275E043323A91D53005FCB7B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		2773303023ACEC36000ADDB1 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		2773303223ACEC36000ADDB1 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		2773303323ACEC36000ADDB1 /* UITextViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		2773303423ACEC36000ADDB1 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		2773303523ACEC36000ADDB1 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		2773303723ACEC36000ADDB1 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		2773303823ACEC36000ADDB1 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		2773303923ACEC36000ADDB1 /* MIMeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIMeType.swift; sourceTree = "<group>"; };
+		2773303A23ACEC36000ADDB1 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		2773303B23ACEC36000ADDB1 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		2773303C23ACEC36000ADDB1 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		2773303D23ACEC36000ADDB1 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		2773304123ACEC36000ADDB1 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		277331FF23ACEC37000ADDB1 /* Cabin-Medium-TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium-TTF.ttf"; sourceTree = "<group>"; };
+		2773320023ACEC37000ADDB1 /* WorkSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.otf"; sourceTree = "<group>"; };
+		2773320123ACEC37000ADDB1 /* Cabin-Bold-TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Bold-TTF.ttf"; sourceTree = "<group>"; };
+		2773320223ACEC37000ADDB1 /* Cabin-SemiBold-TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold-TTF.ttf"; sourceTree = "<group>"; };
+		2773320323ACEC37000ADDB1 /* Cabin-Regular-TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular-TTF.ttf"; sourceTree = "<group>"; };
 		59DE9E5099E2E9E2620441F5 /* Pods-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.release.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		823AD5EAD8AB277A8AE59124 /* Pods-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.debug.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FFC2E4842B6FC1B2EC520271 /* Pods_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,22 +88,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		271346D123A4F95900696806 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				271346D223A4F97D00696806 /* APIManager.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		271346D523A505B800696806 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				271346D623A505DF00696806 /* NsUserDefaults+Helper.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		2750C47823A3E6FA007D6631 = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +144,6 @@
 			children = (
 				2750C4AF23A3ECAD007D6631 /* LoginPageVC.swift */,
 				2750C4B123A3ECC8007D6631 /* SignUpVC.swift */,
-				2750C4B323A3ECDA007D6631 /* MainPageVC.swift */,
 				271346CF23A4F6CD00696806 /* HomePageVC.swift */,
 			);
 			path = Controller;
@@ -147,19 +160,67 @@
 		2750C4B523A3EF63007D6631 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				271346D523A505B800696806 /* Extension */,
-				271346D123A4F95900696806 /* API */,
-				2750C4B623A3EF7C007D6631 /* AppConstant */,
+				2773302B23ACEC36000ADDB1 /* New Group */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		2750C4B623A3EF7C007D6631 /* AppConstant */ = {
+		2773302B23ACEC36000ADDB1 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				2750C4B723A3EF99007D6631 /* AppConstant.swift */,
+				2773302E23ACEC36000ADDB1 /* Constants */,
+				2773303123ACEC36000ADDB1 /* Extensions */,
+				2773304023ACEC36000ADDB1 /* Api */,
+				277331FE23ACEC37000ADDB1 /* Fonts */,
 			);
-			path = AppConstant;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2773302E23ACEC36000ADDB1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2773303023ACEC36000ADDB1 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		2773303123ACEC36000ADDB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2773303223ACEC36000ADDB1 /* UIColorExtension.swift */,
+				271346D623A505DF00696806 /* NsUserDefaults+Helper.swift */,
+				2773303323ACEC36000ADDB1 /* UITextViewExtension.swift */,
+				2773303423ACEC36000ADDB1 /* ViewControllerExtension.swift */,
+				2773303523ACEC36000ADDB1 /* NSObjectExtension.swift */,
+				2773303723ACEC36000ADDB1 /* UITextFieldExtension.swift */,
+				2773303823ACEC36000ADDB1 /* UIViewExtension.swift */,
+				2773303923ACEC36000ADDB1 /* MIMeType.swift */,
+				2773303A23ACEC36000ADDB1 /* UIDeviceExtension.swift */,
+				2773303B23ACEC36000ADDB1 /* ShadowView.swift */,
+				2773303C23ACEC36000ADDB1 /* StringExtension.swift */,
+				2773303D23ACEC36000ADDB1 /* UIImageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2773304023ACEC36000ADDB1 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				2773304123ACEC36000ADDB1 /* APIManager.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		277331FE23ACEC37000ADDB1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				277331FF23ACEC37000ADDB1 /* Cabin-Medium-TTF.ttf */,
+				2773320023ACEC37000ADDB1 /* WorkSans-Regular.otf */,
+				2773320123ACEC37000ADDB1 /* Cabin-Bold-TTF.ttf */,
+				2773320223ACEC37000ADDB1 /* Cabin-SemiBold-TTF.ttf */,
+				2773320323ACEC37000ADDB1 /* Cabin-Regular-TTF.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		38A5C5207E33B6E7B75941B4 /* Frameworks */ = {
@@ -240,6 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2750C4AE23A3EC15007D6631 /* Main.storyboard in Resources */,
+				2773327323ACEC37000ADDB1 /* Cabin-SemiBold-TTF.ttf in Resources */,
+				2773327123ACEC37000ADDB1 /* WorkSans-Regular.otf in Resources */,
+				2773327023ACEC37000ADDB1 /* Cabin-Medium-TTF.ttf in Resources */,
+				2773327423ACEC37000ADDB1 /* Cabin-Regular-TTF.ttf in Resources */,
+				2773327223ACEC37000ADDB1 /* Cabin-Bold-TTF.ttf in Resources */,
 				2750C48F23A3E6FC007D6631 /* LaunchScreen.storyboard in Resources */,
 				2750C48C23A3E6FC007D6631 /* Assets.xcassets in Resources */,
 			);
@@ -295,15 +361,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				2750C48523A3E6FA007D6631 /* AppDelegate.swift in Sources */,
+				2773321923ACEC37000ADDB1 /* NSObjectExtension.swift in Sources */,
+				2773321623ACEC37000ADDB1 /* UIColorExtension.swift in Sources */,
+				2773322323ACEC37000ADDB1 /* APIManager.swift in Sources */,
 				271346D723A505DF00696806 /* NsUserDefaults+Helper.swift in Sources */,
-				2750C4B823A3EF99007D6631 /* AppConstant.swift in Sources */,
+				2773321823ACEC37000ADDB1 /* ViewControllerExtension.swift in Sources */,
 				275E043423A91D53005FCB7B /* Home.swift in Sources */,
 				271346D023A4F6CD00696806 /* HomePageVC.swift in Sources */,
+				2773321D23ACEC37000ADDB1 /* MIMeType.swift in Sources */,
 				2750C4B223A3ECC8007D6631 /* SignUpVC.swift in Sources */,
+				2773321C23ACEC37000ADDB1 /* UIViewExtension.swift in Sources */,
 				275E042F23A919B2005FCB7B /* LoginVM.swift in Sources */,
-				2750C4B423A3ECDA007D6631 /* MainPageVC.swift in Sources */,
+				2773321F23ACEC37000ADDB1 /* ShadowView.swift in Sources */,
+				2773321723ACEC37000ADDB1 /* UITextViewExtension.swift in Sources */,
+				2773321B23ACEC37000ADDB1 /* UITextFieldExtension.swift in Sources */,
+				2773322123ACEC37000ADDB1 /* UIImageExtension.swift in Sources */,
+				2773321E23ACEC37000ADDB1 /* UIDeviceExtension.swift in Sources */,
 				2750C4B023A3ECAD007D6631 /* LoginPageVC.swift in Sources */,
-				271346D323A4F97D00696806 /* APIManager.swift in Sources */,
+				2773322023ACEC37000ADDB1 /* StringExtension.swift in Sources */,
+				2773321523ACEC37000ADDB1 /* AppConstants.swift in Sources */,
 				275E043223A91D19005FCB7B /* SignUP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,14 +520,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGZVY9CYAR;
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/macos/lib",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/macos/lib",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsm.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -462,14 +558,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGZVY9CYAR;
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/macos/lib",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/macos/lib",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+					"$(PROJECT_DIR)/DemoApp/Helpers/New\\ Group/FrameWorks/Postal-master\\ 3/dependencies/build/ios/lib/sasl2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsm.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

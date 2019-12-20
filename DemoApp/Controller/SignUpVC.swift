@@ -80,7 +80,7 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func goBack(_ sender: Any) {
-         self.navigationController?.popViewController(animated: true)
+        APPDELEGATE.updateLoginVC()
     }
     
 }
