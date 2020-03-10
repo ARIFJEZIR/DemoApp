@@ -339,7 +339,18 @@ extension UIViewController{
     @objc func backAction(_ sender: UIButton){
         self.navigationController?.popViewController(animated: true)
     }
+   func createLabelTableView(){
+      
+          let noDataLabel: UILabel     = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+            noDataLabel.text          = "No Experience"
+            noDataLabel.textColor     = UIColor.white
+            noDataLabel.textAlignment = .center
+            tableView.backgroundView  = noDataLabel
+            tableView.separatorStyle = .none
+            return 0
+   }
     
 }
+
 
 
