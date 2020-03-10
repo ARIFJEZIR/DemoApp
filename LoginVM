@@ -40,4 +40,32 @@ class LoginVM: NSObject {
         }
     }
 }
+
+   func getProfile(params: [String: Any]?,callback: @escaping ProfileUpdateCallBack){
+        let header = ["x-auth-token":USERDEFAULTS.getAuthToken()]
+        APIManager.shared.getRequest(stringApi: ProfileUpdate.getProfile + params!.stringFromHttpParameters(), headers: header)  { (response, error) in
+            let status = self.isStatusOK(json: response)
+            if status.isOk{
+                let profile = ProfileModel(fromDictionary: (response as? [String: Any])!)
+                self.profile = profile.data
+                callback(true)
+            }
+            else{
+                callback(false)
+            }
+        }
+    }
+    
+    func updateImage( uploads: [FileUpload], params: [String: Any],callback: @escaping ProfileUpdateCallBack){
+        let header = ["x-auth-token":USERDEFAULTS.getAuthToken()]
+        APIManager.shared.updateImageandVoice(stringAPI: ProfileUpdate.profileURL , uploads: uploads, params: params, headers: header) { (response, error) in
+            let status = self.isStatusOK(json: response)
+            if status.isOk{
+                let login = ProfileModel(fromDictionary:(response as? [String: Any])!)
+                USERDEFAULTS.saveLoginDetails(logininfo: login.data.toDictionary())
+                callback(true)
+            }else{
+                callback(false)
+            }
+        }
 }
