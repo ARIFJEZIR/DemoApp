@@ -16,13 +16,16 @@ class PageViewVC: UIViewController {
     func setUpPageMenu(){
         var controllerArray: [UIViewController] = []
         let VC1 = STORYBOARDHOME.instantiateViewController(withIdentifier: "VC1") as! VC1
+           VC1.PageViewVC = self
         allVC1.navigation = self.navigationController
         controllerArray.append(allVC1)
         let VC2 = STORYBOARDHOME.instantiateViewController(withIdentifier: "VC2") as! VC2
+        VC2.PageViewVC = self
         VC2.navigation = self.navigationController
         controllerArray.append(publishedVC2)
         
         let VC3 = STORYBOARDHOME.instantiateViewController(withIdentifier: "VC3") as! VC3
+        VC3.PageViewVC = self
         VC3.navigation =  self.navigationController
         controllerArray.append(draftsVC3)
         /// MARK:--- MapView to be added
