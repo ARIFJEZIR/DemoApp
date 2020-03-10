@@ -1,0 +1,106 @@
+class PageViewVC: UIViewController {
+    
+    @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var pageView: UIView!
+    @IBOutlet var addIncident: UIButton!
+    var pageTitle = ["VC1", "VC2", "VC3"]
+    var selectedItem = 0
+    var pageMenu: CAPSPageMenu!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setUpPageMenu()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    func setUpPageMenu(){
+        var controllerArray: [UIViewController] = []
+        let VC1 = STORYBOARDHOME.instantiateViewController(withIdentifier: "VC1") as! VC1
+        allVC1.navigation = self.navigationController
+        controllerArray.append(allVC1)
+        let VC2 = STORYBOARDHOME.instantiateViewController(withIdentifier: "VC2") as! VC2
+        VC2.navigation = self.navigationController
+        controllerArray.append(publishedVC2)
+        
+        let VC3 = STORYBOARDHOME.instantiateViewController(withIdentifier: "VC3") as! VC3
+        VC3.navigation =  self.navigationController
+        controllerArray.append(draftsVC3)
+        /// MARK:--- MapView to be added
+        let parameters: [CAPSPageMenuOption] = [
+            .hideTopMenuBar(true)]
+        pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect(x: 0, y: 0, width: pageView.frame.size.width, height:  pageView.frame.size.height), pageMenuOptions: parameters)
+        pageMenu.delegate = self
+        pageMenu!.view.backgroundColor = UIColor.clear
+        pageView.addSubview(pageMenu!.view)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated) 
+        self.refereshView(selectedItem)
+    }
+    
+    func refereshView(_ index: Int) {
+        if let allVC1 = pageMenu.controllerArray[index] as? VC1{
+            }
+        else if let publishedVC2 = pageMenu.controllerArray[index] as? VC2{
+   
+        }
+        else if let draftsVC3 = pageMenu.controllerArray[index] as? VC3{
+       
+        }
+        
+        
+    }
+    
+    
+   
+    
+}
+extension PageViewVC : CAPSPageMenuDelegate
+{
+    func didMoveToPage(_ controller: UIViewController, index: Int) {
+        selectedItem = index
+        collectionView.reloadData()
+        self.refereshView(index)
+    }
+}
+
+
+
+extension MyIncidentVC : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IncidentPageCell", for: indexPath) as! IncidentPageCell
+        cell.lblPageName.text = pageTitle[indexPath.row]
+        cell.lblPageName.font = (selectedItem == indexPath.row) ? UIFont.boldCabinFont(11)  : UIFont.regularCabinFont(11)
+        cell.lblPageName.textColor = (selectedItem == indexPath.row) ? UIColor.white  : UIColor.grayColor
+        cell.lblBottomLine.backgroundColor = (selectedItem == indexPath.row) ? UIColor.white  : UIColor.grayColor
+        cell.imgBorder.backgroundColor = (selectedItem == indexPath.row) ? UIColor.white  : UIColor.grayColor
+        return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width  = collectionView.width / 3
+        let height = collectionView.height
+        return CGSize(width: width, height: height)
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedItem = indexPath.row
+        collectionView.reloadData()
+        pageMenu.moveToPage(indexPath.row)
+        self.refereshView(indexPath.row)
+    }
+    
+}
+
+
+
+
+class PageCell : UICollectionViewCell {
+    @IBOutlet var lblPageName: UILabel!
+    @IBOutlet var imgBorder: UIImageView!
+    @IBOutlet var lblBottomLine: UILabel!
+    
+}
