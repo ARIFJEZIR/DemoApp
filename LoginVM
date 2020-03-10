@@ -24,4 +24,20 @@ class LoginVM: NSObject {
         }
         
     }
+    
+    func getData(params: [String: Any]?,isProgress: Bool,callback: @escaping LoginCallBack){
+    let header = ["x-auth-token":USERDEFAULTS.getAuthToken()]
+        APIManager.shared.getRequest(stringApi: HomeAPI.getExperienceURL,parameters: params, headers: header,isProgress: isProgress)  { (response, error) in
+        let status = self.isStatusOK(json: response)
+        if status.isOk{
+            let home = HomeModel(fromDictionary: (response as? [String: Any])!)
+            self.experience = home.data.experience
+            self.home = home.data
+            callback(true)
+        }
+        else{
+            callback(false)
+        }
+    }
+}
 }
