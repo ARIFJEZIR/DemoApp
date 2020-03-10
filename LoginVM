@@ -1,0 +1,27 @@
+import Foundation
+typealias LoginCallBack = (_ loginStatus: Bool) -> Void
+class LoginVM: NSObject {
+    
+    func userLogin(params: [String: Any]?,callback: @escaping LoginCallBack){
+        APIManager.shared.login(userParams: params) { (response, error) in
+            let status = self.isStatusOK(json: response)
+            if status.isOk{
+                
+                let login = LoginModel(fromDictionary: (response as? [String: Any])!)
+               USERDEFAULTS.saveLoginDetails(logininfo: login.data.toDictionary())
+                USERDEFAULTS.saveAuthToken(token: login.data.token)
+                USERDEFAULTS.saveEmailID(emailID: login.data.email)
+                USERDEFAULTS.saveUserID(userID: login.data.userId)
+                USERDEFAULTS.saveFirstName(studentName: login.data.firstName)
+                USERDEFAULTS.saveLastName(staffName: login.data.lastName)
+                USERDEFAULTS.saveProfileImage(img:login.data.profileImage )
+                USERDEFAULTS.savePhoneNumber(ph: login.data.phoneNumber)
+                 callback(true)
+            }
+            else{
+                callback(false)
+            }
+        }
+        
+    }
+}
